@@ -1,6 +1,6 @@
 import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
-import { AbsoluteFill, staticFile } from "remotion";
+import { AbsoluteFill } from "remotion";
 import {
   TransitionSeries,
   linearTiming
@@ -28,7 +28,7 @@ const transitions = [
 ];
 const MyComposition = () => {
   return /* @__PURE__ */ jsxDEV(AbsoluteFill, { style: { backgroundColor: "black" }, children: /* @__PURE__ */ jsxDEV(TransitionSeries, { children: gifs.map((gifSrc, index) => /* @__PURE__ */ jsxDEV(React.Fragment, { children: [
-    /* @__PURE__ */ jsxDEV(TransitionSeries.Sequence, { durationInFrames: DURATION_PER_GIF_IN_FRAMES, children: /* @__PURE__ */ jsxDEV(Scene, { src: staticFile(gifSrc) }, void 0, false, {
+    /* @__PURE__ */ jsxDEV(TransitionSeries.Sequence, { durationInFrames: DURATION_PER_GIF_IN_FRAMES, children: /* @__PURE__ */ jsxDEV(Scene, { src: gifSrc }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 40,
       columnNumber: 15
