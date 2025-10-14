@@ -1,10 +1,9 @@
 import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { AbsoluteFill, useCurrentFrame, interpolate } from "remotion";
 import { Gif } from "@remotion/gif";
-const Scene = ({ src }) => {
+const Scene = ({ src, durationInFrames }) => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
   const scale = interpolate(
     frame,
     [0, durationInFrames / 2, durationInFrames],
@@ -34,7 +33,7 @@ const Scene = ({ src }) => {
         false,
         {
           fileName: "<stdin>",
-          lineNumber: 24,
+          lineNumber: 23,
           columnNumber: 7
         }
       )
@@ -43,7 +42,7 @@ const Scene = ({ src }) => {
     false,
     {
       fileName: "<stdin>",
-      lineNumber: 17,
+      lineNumber: 16,
       columnNumber: 5
     }
   );
