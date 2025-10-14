@@ -1,6 +1,7 @@
 import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, OffthreadVideo } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { Gif } from "@remotion/gif";
 const Scene = ({ src }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -19,7 +20,7 @@ const Scene = ({ src }) => {
         backgroundColor: "black"
       },
       children: /* @__PURE__ */ jsxDEV(
-        OffthreadVideo,
+        Gif,
         {
           src,
           style: {
@@ -33,7 +34,7 @@ const Scene = ({ src }) => {
         false,
         {
           fileName: "<stdin>",
-          lineNumber: 23,
+          lineNumber: 24,
           columnNumber: 7
         }
       )
@@ -42,7 +43,7 @@ const Scene = ({ src }) => {
     false,
     {
       fileName: "<stdin>",
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 5
     }
   );

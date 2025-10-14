@@ -8,7 +8,6 @@ import {
 import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
 import { wipe } from "@remotion/transitions/wipe";
-import { clockWipe } from "@remotion/transitions/clock-wipe";
 import { Scene } from "./Scene.jsx";
 const gifs = [
   "asset_0.gif",
@@ -23,18 +22,17 @@ const TRANSITION_DURATION_IN_FRAMES = 30;
 const transitions = [
   fade(),
   slide(),
-  wipe(),
-  clockWipe()
+  wipe()
 ];
 const MyComposition = () => {
   return /* @__PURE__ */ jsxDEV(AbsoluteFill, { style: { backgroundColor: "black" }, children: /* @__PURE__ */ jsxDEV(TransitionSeries, { children: gifs.map((gifSrc, index) => /* @__PURE__ */ jsxDEV(React.Fragment, { children: [
     /* @__PURE__ */ jsxDEV(TransitionSeries.Sequence, { durationInFrames: DURATION_PER_GIF_IN_FRAMES, children: /* @__PURE__ */ jsxDEV(Scene, { src: gifSrc }, void 0, false, {
       fileName: "<stdin>",
-      lineNumber: 40,
+      lineNumber: 38,
       columnNumber: 15
     }) }, void 0, false, {
       fileName: "<stdin>",
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 13
     }),
     index < gifs.length - 1 && /* @__PURE__ */ jsxDEV(
@@ -47,21 +45,21 @@ const MyComposition = () => {
       false,
       {
         fileName: "<stdin>",
-        lineNumber: 43,
+        lineNumber: 41,
         columnNumber: 15
       }
     )
   ] }, gifSrc, true, {
     fileName: "<stdin>",
-    lineNumber: 38,
+    lineNumber: 36,
     columnNumber: 11
   })) }, void 0, false, {
     fileName: "<stdin>",
-    lineNumber: 36,
+    lineNumber: 34,
     columnNumber: 7
   }) }, void 0, false, {
     fileName: "<stdin>",
-    lineNumber: 35,
+    lineNumber: 33,
     columnNumber: 5
   });
 };
