@@ -5,7 +5,7 @@ import { Player } from "@websim/remotion/player";
 import { MyComposition } from "./composition.jsx";
 const DURATION_PER_GIF_IN_FRAMES = 90;
 const TRANSITION_DURATION_IN_FRAMES = 30;
-const GIF_COUNT = 24;
+const GIF_COUNT = 6;
 const TOTAL_DURATION = GIF_COUNT * DURATION_PER_GIF_IN_FRAMES + (GIF_COUNT - 1) * TRANSITION_DURATION_IN_FRAMES;
 const App = () => {
   return /* @__PURE__ */ jsxDEV(
